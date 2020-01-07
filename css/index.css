@@ -1,3 +1,16 @@
+#pic-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pic-columns img {
+  margin: 5px;
+  width: 80%;
+  height: auto;
+}
+#pic-columns p {
+  width: 80%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -106,7 +119,6 @@ section {
 }
 body {
   line-height: 1;
-  background-color: #606878;
 }
 ol,
 ul {
@@ -136,15 +148,32 @@ html {
 }
 html,
 body {
-  font-family: 'Averia Sans Libre', cursive;
+  font-family: "Averia Sans Libre", cursive;
   color: black;
+}
+body {
+  background-color: #606878;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2vh 2vw;
+}
+.banner {
+  display: none;
+}
+@media (min-width: 500px) {
+  .banner {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Averia Sans Libre', cursive;
+  font-family: "Averia Sans Libre", cursive;
   color: black;
 }
 h1 {
@@ -166,22 +195,6 @@ p {
 footer {
   font-size: 3rem;
   align-self: center;
-}
-.banner {
-  display: none;
-}
-@media (min-width: 500px) {
-  .banner {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 2vh 2vw;
 }
 body button {
   width: 100px;
@@ -209,4 +222,66 @@ body button {
 }
 .container p {
   padding: 2vh 5vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2vh 2vw;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.about-container h1 {
+  align-self: center;
+}
+.about-container .grid-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .grid-container .grid-top {
+  display: flex;
+  flex-direction: row;
+}
+.about-container .grid-container .grid-top .left-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .grid-container .grid-top .left-pics img {
+  margin: 5px;
+  width: 80%;
+  height: auto;
+}
+.about-container .grid-container .grid-top .left-pics p {
+  width: 80%;
+}
+.about-container .grid-container .grid-top .right-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .grid-container .grid-top .right-pics img {
+  margin: 5px;
+  width: 80%;
+  height: auto;
+}
+.about-container .grid-container .grid-top .right-pics p {
+  width: 80%;
+}
+.about-container .grid-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .grid-bottom img {
+  align-self: center;
+  width: 40%;
+  height: auto;
+  margin: 5px;
+}
+.about-container .grid-bottom p {
+  align-self: center;
+  width: 80%;
 }
