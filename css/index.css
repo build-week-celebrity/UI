@@ -158,16 +158,6 @@ body {
   align-content: center;
   padding: 2vh 2vw;
 }
-.banner {
-  display: none;
-}
-@media (min-width: 500px) {
-  .banner {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
 h1,
 h2,
 h3,
@@ -216,6 +206,12 @@ body button {
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
+}
+@media (min-width: 500px) {
+  .container .main {
+    align-self: center;
+    width: 80%;
+  }
 }
 .container .main img {
   width: 100%;
