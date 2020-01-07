@@ -106,7 +106,7 @@ section {
 }
 body {
   line-height: 1;
-  background-color: #131418;
+  background-color: #606878;
 }
 ol,
 ul {
@@ -136,7 +136,7 @@ html {
 html,
 body {
   font-family: 'Averia Sans Libre', cursive;
-  color: #FFFFFF;
+  color: black;
 }
 h1,
 h2,
@@ -144,7 +144,7 @@ h3,
 h4,
 h5 {
   font-family: 'Averia Sans Libre', cursive;
-  color: #FFFFFF;
+  color: black;
 }
 h1 {
   font-size: 4.8rem;
@@ -187,8 +187,9 @@ p {
   max-width: 1000px;
 }
 .container .main {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
 }
 .container .main img {
