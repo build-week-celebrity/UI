@@ -5,11 +5,44 @@
 }
 #pic-columns img {
   margin: 5px;
-  width: 80%;
+  width: 40%;
   height: auto;
+  margin-top: 3%;
 }
-#pic-columns p {
-  width: 80%;
+@media (min-width: 1000px) {
+  #pic-columns img {
+    width: 30%;
+  }
+}
+@media (min-width: 500px) {
+  #desktop-adjust {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #desktop-adjust p {
+    max-width: 50%;
+  }
+}
+@media (min-width: 500px) {
+  #desktop-adjust-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    text-align: right;
+  }
+}
+#team-info {
+  margin: 1%;
+}
+#team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+#team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -144,18 +177,19 @@ table {
 }
 html {
   font-size: 62.5%;
-  height: 100vh;
 }
 html,
 body {
-  font-family: "Averia Sans Libre", cursive;
-  color: black;
+  font-family: 'Roboto', sans-serif;
+  color: #D7DFFF;
 }
 body {
-  background-color: #606878;
+  background-color: #23242A;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
+  align-items: center;
   padding: 2vh 2vw;
 }
 h1,
@@ -163,55 +197,64 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Averia Sans Libre", cursive;
-  color: black;
+  font-family: 'Montserrat', sans-serif;
+  color: #D7DFFF;
 }
 h1 {
   font-size: 4.8rem;
+  color: white;
 }
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-.container {
-  margin: 0 auto;
+  font-size: 2.2rem;
+  line-height: 1.6;
 }
 .attribution {
   font-size: 1.2rem;
   margin-top: 5vh;
 }
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 3rem;
-  align-self: center;
+  display: inline;
+  text-align: center;
+  padding: 30px;
 }
 body button {
-  width: 100px;
-  height: 5vh;
+  width: 15%;
+  height: 10vh;
   padding: 1px 3px;
   margin: 6vh 0;
   align-self: center;
+  background-color: #454852;
+  color: #D7DFFF;
+  border-color: black;
+  border-radius: 15px;
+  font-size: 2.5rem;
 }
 .container {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+  align-self: center;
+  background-color: #454852;
 }
 .container h1 {
   align-self: center;
+  margin-top: 2%;
+}
+.container h3 {
+  margin: 4% 0;
+  text-align: center;
 }
 .container .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 }
 @media (min-width: 500px) {
@@ -224,18 +267,25 @@ body button {
   width: 100%;
 }
 .container p {
-  padding: 2vh 5vw;
+  padding: 2vh 0;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: start;
 }
-body {
-  display: flex;
-  flex-direction: column;
+.container .conclusion {
   align-content: center;
-  padding: 2vh 2vw;
+}
+.container .conclusion p {
+  max-width: 80%;
+  text-align: center;
 }
 .about-container {
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+.about-container img {
+  border-radius: 200px;
 }
 .about-container h1 {
   align-self: center;
@@ -246,7 +296,8 @@ body {
 }
 .about-container .grid-container .grid-top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-content: center;
 }
 .about-container .grid-container .grid-top .left-pics {
   display: flex;
@@ -255,36 +306,179 @@ body {
 }
 .about-container .grid-container .grid-top .left-pics img {
   margin: 5px;
-  width: 80%;
+  width: 40%;
   height: auto;
+  margin-top: 3%;
 }
-.about-container .grid-container .grid-top .left-pics p {
-  width: 80%;
+@media (min-width: 1000px) {
+  .about-container .grid-container .grid-top .left-pics img {
+    width: 30%;
+  }
+}
+.about-container .grid-container .grid-top .left-pics .pic1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .about-container .grid-container .grid-top .left-pics .pic1-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .about-container .grid-container .grid-top .left-pics .pic1-container p {
+    max-width: 50%;
+  }
+}
+.about-container .grid-container .grid-top .left-pics .pic1-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .left-pics .pic1-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .left-pics .pic1-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .about-container .grid-container .grid-top .left-pics .pic2-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    text-align: right;
+  }
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
 }
 .about-container .grid-container .grid-top .right-pics {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-container .grid-container .grid-top .right-pics img {
-  margin: 5px;
-  width: 80%;
-  height: auto;
-}
-.about-container .grid-container .grid-top .right-pics p {
-  width: 80%;
-}
-.about-container .grid-bottom {
+.about-container .grid-container .grid-top .right-pics .pic3-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.about-container .grid-bottom img {
-  align-self: center;
+@media (min-width: 500px) {
+  .about-container .grid-container .grid-top .right-pics .pic3-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .about-container .grid-container .grid-top .right-pics .pic3-container p {
+    max-width: 50%;
+  }
+}
+.about-container .grid-container .grid-top .right-pics .pic3-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .right-pics .pic3-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .right-pics .pic3-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .about-container .grid-container .grid-top .right-pics .pic4-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    text-align: right;
+  }
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+.about-container .grid-container .grid-top .right-pics img {
+  margin: 5px;
   width: 40%;
   height: auto;
-  margin: 5px;
+  margin-top: 3%;
 }
-.about-container .grid-bottom p {
-  align-self: center;
-  width: 80%;
+@media (min-width: 1000px) {
+  .about-container .grid-container .grid-top .right-pics img {
+    width: 30%;
+  }
+}
+@media (min-width: 500px) {
+  .about-container .grid-container .grid-top .right-pics #desktop-adjust {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .about-container .grid-container .grid-top .right-pics #desktop-adjust p {
+    max-width: 50%;
+  }
+}
+.about-container .grid-bottom .pic5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .about-container .grid-bottom .pic5-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .about-container .grid-bottom .pic5-container p {
+    max-width: 50%;
+  }
+}
+.about-container .grid-bottom .pic5-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-bottom .pic5-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-bottom .pic5-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+.about-container .grid-bottom img {
+  width: 40%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  .about-container .grid-bottom img {
+    width: 35%;
+  }
 }

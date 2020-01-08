@@ -4,10 +4,50 @@
     align-items: center;
     img{
         margin: 5px;
-        width: 80%;
+        width: 40%;
         height: auto;
+        margin-top: 3%;
+        @media @widescreen{
+            width: 30%;
+        }
+    
     }
-    p{
-        width: 80%;
+}
+
+#desktop-adjust {
+    @media @desktop {
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+
+       p {
+           max-width: 50%;
+       }
+
     }
+   }
+   
+   #desktop-adjust-reverse {
+    @media @desktop {
+       display: flex;
+       flex-direction: row-reverse;
+       width: 100%;
+       text-align: right;
+
+
+    }
+   }
+   
+#team-info {
+    margin: 1%;
+    .team-role{
+      font-size: 2.4rem;
+      margin: 15px 0;
+    }
+    a {
+        display: block;
+        font-size: 2rem;
+        margin: 5px 0;
+    }
+
 }
