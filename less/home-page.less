@@ -12,13 +12,14 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+  align-self: center;
   h1 {
     align-self: center;
   }
   .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     @media @desktop {
         align-self: center;
@@ -30,6 +31,16 @@ body {
     }
   }
   p {
-    padding: 2vh 5vw;
+    padding: 2vh 0;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+  }
+  .conclusion{
+    align-content: center;
+    p {
+      max-width: 70%;
+      text-align: center;
+    }
   }
 }

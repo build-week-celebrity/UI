@@ -4,10 +4,47 @@
     align-items: center;
     img{
         margin: 5px;
-        width: 80%;
+        width: 40%;
         height: auto;
+        margin-top: 3%;
+        @media @widescreen{
+            width: 30%;
+        }
+    
     }
     p{
-        width: 80%;
+        max-width: 80%;
+        margin: 3%;
+        @media @widescreen {
+            max-width: 60%;
+            margin: 1%;
+        }
     }
 }
+
+#desktop-adjust {
+    @media @desktop {
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+
+       p {
+           max-width: 50%;
+       }
+
+    }
+   }
+   
+   #desktop-adjust-reverse {
+    @media @desktop {
+       display: flex;
+       flex-direction: row-reverse;
+       width: 100%;
+
+       p {
+           max-width: 50%;
+       }
+
+    }
+   }
+   
