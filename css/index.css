@@ -14,16 +14,6 @@
     width: 30%;
   }
 }
-#pic-columns p {
-  max-width: 80%;
-  margin: 3%;
-}
-@media (min-width: 1000px) {
-  #pic-columns p {
-    max-width: 60%;
-    margin: 1%;
-  }
-}
 @media (min-width: 500px) {
   #desktop-adjust {
     display: flex;
@@ -39,10 +29,20 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    text-align: right;
   }
-  #desktop-adjust-reverse p {
-    max-width: 50%;
-  }
+}
+#team-info {
+  margin: 1%;
+}
+#team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+#team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -180,11 +180,11 @@ html {
 }
 html,
 body {
-  font-family: "Averia Sans Libre", cursive;
-  color: black;
+  font-family: 'Roboto', sans-serif;
+  color: #D7DFFF;
 }
 body {
-  background-color: #606878;
+  background-color: #23242A;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,21 +197,22 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Averia Sans Libre", cursive;
-  color: black;
+  font-family: 'Montserrat', sans-serif;
+  color: #D7DFFF;
 }
 h1 {
   font-size: 4.8rem;
+  color: white;
 }
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 p {
   font-size: 2.2rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 .attribution {
   font-size: 1.2rem;
@@ -224,20 +225,31 @@ footer {
   padding: 30px;
 }
 body button {
-  width: 100px;
-  height: 5vh;
+  width: 15%;
+  height: 10vh;
   padding: 1px 3px;
   margin: 6vh 0;
   align-self: center;
+  background-color: #454852;
+  color: #D7DFFF;
+  border-color: black;
+  border-radius: 15px;
+  font-size: 2.5rem;
 }
 .container {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
   align-self: center;
+  background-color: #454852;
 }
 .container h1 {
   align-self: center;
+  margin-top: 2%;
+}
+.container h3 {
+  margin: 4% 0;
+  text-align: center;
 }
 .container .main {
   display: flex;
@@ -258,20 +270,22 @@ body button {
   padding: 2vh 0;
   margin: 0 auto;
   max-width: 80%;
-  text-align: center;
+  text-align: start;
 }
 .container .conclusion {
   align-content: center;
 }
 .container .conclusion p {
-  max-width: 70%;
+  max-width: 80%;
   text-align: center;
 }
 .about-container {
   display: flex;
   flex-direction: column;
   align-content: center;
-  max-width: 1000px;
+}
+.about-container img {
+  border-radius: 200px;
 }
 .about-container h1 {
   align-self: center;
@@ -301,16 +315,6 @@ body button {
     width: 30%;
   }
 }
-.about-container .grid-container .grid-top .left-pics p {
-  max-width: 80%;
-  margin: 3%;
-}
-@media (min-width: 1000px) {
-  .about-container .grid-container .grid-top .left-pics p {
-    max-width: 60%;
-    margin: 1%;
-  }
-}
 .about-container .grid-container .grid-top .left-pics .pic1-container {
   display: flex;
   flex-direction: column;
@@ -326,6 +330,18 @@ body button {
     max-width: 50%;
   }
 }
+.about-container .grid-container .grid-top .left-pics .pic1-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .left-pics .pic1-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .left-pics .pic1-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
 .about-container .grid-container .grid-top .left-pics .pic2-container {
   display: flex;
   flex-direction: column;
@@ -336,10 +352,20 @@ body button {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    text-align: right;
   }
-  .about-container .grid-container .grid-top .left-pics .pic2-container p {
-    max-width: 50%;
-  }
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .left-pics .pic2-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
 }
 .about-container .grid-container .grid-top .right-pics {
   display: flex;
@@ -350,6 +376,7 @@ body button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media (min-width: 500px) {
   .about-container .grid-container .grid-top .right-pics .pic3-container {
@@ -361,6 +388,18 @@ body button {
     max-width: 50%;
   }
 }
+.about-container .grid-container .grid-top .right-pics .pic3-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .right-pics .pic3-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .right-pics .pic3-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
 .about-container .grid-container .grid-top .right-pics .pic4-container {
   display: flex;
   flex-direction: column;
@@ -371,10 +410,20 @@ body button {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    text-align: right;
   }
-  .about-container .grid-container .grid-top .right-pics .pic4-container p {
-    max-width: 50%;
-  }
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-container .grid-top .right-pics .pic4-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
 }
 .about-container .grid-container .grid-top .right-pics img {
   margin: 5px;
@@ -387,16 +436,6 @@ body button {
     width: 30%;
   }
 }
-.about-container .grid-container .grid-top .right-pics p {
-  max-width: 80%;
-  margin: 3%;
-}
-@media (min-width: 1000px) {
-  .about-container .grid-container .grid-top .right-pics p {
-    max-width: 60%;
-    margin: 1%;
-  }
-}
 @media (min-width: 500px) {
   .about-container .grid-container .grid-top .right-pics #desktop-adjust {
     display: flex;
@@ -407,35 +446,39 @@ body button {
     max-width: 50%;
   }
 }
-.about-container .grid-bottom {
+.about-container .grid-bottom .pic5-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.about-container .grid-bottom img {
-  align-self: center;
-  width: 50%;
-  height: auto;
-  margin: 3%;
+  align-items: center;
 }
 @media (min-width: 500px) {
-  .about-container .grid-bottom img {
-    width: 40%;
-  }
-}
-.about-container .grid-bottom p {
-  align-self: center;
-  max-width: 50%;
-  margin-top: 3%;
-}
-@media (min-width: 500px) {
-  .about-container .grid-bottom {
+  .about-container .grid-bottom .pic5-container {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  .about-container .grid-bottom p {
+  .about-container .grid-bottom .pic5-container p {
     max-width: 50%;
+  }
+}
+.about-container .grid-bottom .pic5-container .team-info {
+  margin: 1%;
+}
+.about-container .grid-bottom .pic5-container .team-info .team-role {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.about-container .grid-bottom .pic5-container .team-info a {
+  display: block;
+  font-size: 2rem;
+  margin: 5px 0;
+}
+.about-container .grid-bottom img {
+  width: 40%;
+  height: auto;
+}
+@media (min-width: 500px) {
+  .about-container .grid-bottom img {
+    width: 35%;
   }
 }

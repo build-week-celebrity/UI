@@ -1,10 +1,18 @@
 body {
   button {
-    width: 100px;
-    height: 5vh;
+    width: 15%;
+    height: 10vh;
     padding: 1px 3px;
     margin: 6vh 0;
     align-self: center;
+    background-color: @darkaccent;
+    color: @text-primary;
+    border-color: black;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    // @media @desktop {
+    //   width:
+    // }
   }
 }
 
@@ -13,8 +21,14 @@ body {
   flex-direction: column;
   max-width: 1000px;
   align-self: center;
+  background-color: @darkaccent;
   h1 {
     align-self: center;
+    margin-top: 2%;
+  }
+  h3{
+    margin: 4% 0;
+    text-align: center;
   }
   .main {
     display: flex;
@@ -34,12 +48,12 @@ body {
     padding: 2vh 0;
     margin: 0 auto;
     max-width: 80%;
-    text-align: center;
+    text-align: start;
   }
   .conclusion{
     align-content: center;
     p {
-      max-width: 70%;
+      max-width: 80%;
       text-align: center;
     }
   }

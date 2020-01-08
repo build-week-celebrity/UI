@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  max-width: 1000px;
+  img{
+    border-radius: 200px;
+  }
 
   h1 {
     align-self: center;
@@ -23,63 +25,81 @@
           flex-direction: column;
           align-items: center;
           #desktop-adjust;
+          .team-info {
+            #team-info;
+          }
         }
         .pic2-container {
           display: flex;
           flex-direction: column;
           align-items: center;
           #desktop-adjust-reverse;
-        }
+          .team-info {
+            #team-info;
+          }
 
+        }
       }
       .right-pics {
         .pic3-container {
           display: flex;
           flex-direction: column;
           align-items: center;
+          width: 100%;
           #desktop-adjust;
+          .team-info {
+            #team-info;
+          }
+
         }
         .pic4-container {
           display: flex;
           flex-direction: column;
           align-items: center;
           #desktop-adjust-reverse;
+          .team-info {
+            #team-info;
+          }
+
         }
         #pic-columns;
         #desktop-adjust {
           @media @desktop {
-             display: flex;
-             flex-direction: row;
-             width: 100%;
-      
-             p {
-                 max-width: 50%;
-             }
-      
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            p {
+              max-width: 50%;
+            }
           }
-         }
-               }
+        }
+      }
     }
   }
   .grid-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    .pic5-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #desktop-adjust;
+      .team-info {
+        #team-info;
+      }
+
+    }
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // align-content: center;
     img {
-      align-self: center;
-      width: 50%;
+      // align-self: center;
+      width: 40%;
       height: auto;
-      margin: 3%;
       @media @desktop {
-        width: 40%;
+        width: 35%;
       }
     }
-    p {
-      align-self: center;
-      max-width: 50%;
-      margin-top: 3%;
-    }
-    #desktop-adjust;
   }
 }

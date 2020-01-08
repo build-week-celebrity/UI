@@ -12,14 +12,6 @@
         }
     
     }
-    p{
-        max-width: 80%;
-        margin: 3%;
-        @media @widescreen {
-            max-width: 60%;
-            margin: 1%;
-        }
-    }
 }
 
 #desktop-adjust {
@@ -40,11 +32,22 @@
        display: flex;
        flex-direction: row-reverse;
        width: 100%;
+       text-align: right;
 
-       p {
-           max-width: 50%;
-       }
 
     }
    }
    
+#team-info {
+    margin: 1%;
+    .team-role{
+      font-size: 2.4rem;
+      margin: 15px 0;
+    }
+    a {
+        display: block;
+        font-size: 2rem;
+        margin: 5px 0;
+    }
+
+}
