@@ -1,3 +1,16 @@
+#pic-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pic-columns img {
+  margin: 5px;
+  width: 80%;
+  height: auto;
+}
+#pic-columns p {
+  width: 80%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -86,7 +99,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -106,7 +119,6 @@ section {
 }
 body {
   line-height: 1;
-  background-color: #131418;
 }
 ol,
 ul {
@@ -132,19 +144,27 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100vh;
 }
 html,
 body {
-  font-family: 'Averia Sans Libre', cursive;
-  color: #FFFFFF;
+  font-family: "Averia Sans Libre", cursive;
+  color: black;
+}
+body {
+  background-color: #606878;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2vh 2vw;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Averia Sans Libre', cursive;
-  color: #FFFFFF;
+  font-family: "Averia Sans Libre", cursive;
+  color: black;
 }
 h1 {
   font-size: 4.8rem;
@@ -162,35 +182,109 @@ p {
 .container {
   margin: 0 auto;
 }
-.banner {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 10vh;
-  padding-top: 20px;
+.attribution {
+  font-size: 1.2rem;
+  margin-top: 5vh;
 }
-.banner .banner-container {
+footer {
   display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.banner nav {
-  display: flex;
+  flex-direction: column;
   align-items: center;
+  font-size: 3rem;
+  align-self: center;
 }
-.banner nav ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
+body button {
+  width: 100px;
+  height: 5vh;
+  padding: 1px 3px;
+  margin: 6vh 0;
+  align-self: center;
 }
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1000px;
 }
+.container h1 {
+  align-self: center;
+}
 .container .main {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
+}
+@media (min-width: 500px) {
+  .container .main {
+    align-self: center;
+    width: 80%;
+  }
 }
 .container .main img {
   width: 100%;
+}
+.container p {
+  padding: 2vh 5vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2vh 2vw;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.about-container h1 {
+  align-self: center;
+}
+.about-container .grid-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .grid-container .grid-top {
+  display: flex;
+  flex-direction: row;
+}
+.about-container .grid-container .grid-top .left-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .grid-container .grid-top .left-pics img {
+  margin: 5px;
+  width: 80%;
+  height: auto;
+}
+.about-container .grid-container .grid-top .left-pics p {
+  width: 80%;
+}
+.about-container .grid-container .grid-top .right-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .grid-container .grid-top .right-pics img {
+  margin: 5px;
+  width: 80%;
+  height: auto;
+}
+.about-container .grid-container .grid-top .right-pics p {
+  width: 80%;
+}
+.about-container .grid-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .grid-bottom img {
+  align-self: center;
+  width: 40%;
+  height: auto;
+  margin: 5px;
+}
+.about-container .grid-bottom p {
+  align-self: center;
+  width: 80%;
 }

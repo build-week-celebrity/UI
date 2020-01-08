@@ -4,16 +4,39 @@
 
 html {
   font-size: 62.5%;
-
+  height: 100vh;
 }
 
-html, body {
-  font-family: 'Averia Sans Libre', cursive;
+html,
+body {
+  font-family: "Averia Sans Libre", cursive;
   color: @text-primary;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Averia Sans Libre', cursive;
+body{
+  background-color: @bg-color;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2vh 2vw;
+}
+
+// .banner{
+//   display: none;
+//   @media @desktop {
+//     display: flex;
+//     width: 100%;
+//     justify-content: flex-end;
+//     font-size: @header-font;
+//   }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Averia Sans Libre", cursive;
   color: @text-primary;
 }
 
@@ -35,6 +58,11 @@ p {
 }
 
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
+}
+
+.attribution{
+  font-size: 1.2rem;
+  margin-top: 5vh;
 }
 

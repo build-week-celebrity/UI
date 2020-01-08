@@ -1,10 +1,35 @@
-.container{
-    max-width: 1000px;
-    .main {
-    display: flexbox;
+body {
+  button {
+    width: 100px;
+    height: 5vh;
+    padding: 1px 3px;
+    margin: 6vh 0;
+    align-self: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  h1 {
+    align-self: center;
+  }
+  .main {
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
-        img {
-            width: 100%;
-        }
-}}
+    @media @desktop {
+        align-self: center;
+        width: 80%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    padding: 2vh 5vw;
+  }
+}
