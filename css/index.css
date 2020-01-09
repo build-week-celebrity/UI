@@ -218,6 +218,21 @@ p {
   font-size: 1.2rem;
   margin-top: 5vh;
 }
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+button:hover {
+  color: #ffffff;
+  box-shadow: 0 0 50px rgba(145, 92, 182, 0.4);
+  font-weight: bold;
+}
+a:visited {
+  color: rgba(145, 92, 182, 0.4);
+}
+a:link {
+  color: #009FC7;
+}
 footer {
   font-size: 3rem;
   display: inline;
@@ -225,7 +240,7 @@ footer {
   padding: 30px;
 }
 body button {
-  width: 15%;
+  width: 10%;
   height: 10vh;
   padding: 1px 3px;
   margin: 6vh 0;
@@ -242,6 +257,7 @@ body button {
   max-width: 1000px;
   align-self: center;
   background-color: #454852;
+  padding: 1%;
 }
 .container h1 {
   align-self: center;
