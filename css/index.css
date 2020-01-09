@@ -218,9 +218,31 @@ p {
   font-size: 1.2rem;
   margin-top: 5vh;
 }
-button {
+.hover-button {
+  display: inline-block;
+  width: 30%;
+  height: 8vh;
+  margin: 6vh 0;
+  align-self: center;
+  background-color: #454852;
+  color: #D7DFFF;
+  border-color: black;
+  border-radius: 15px;
+  font-size: 2rem;
   cursor: pointer;
   text-transform: uppercase;
+}
+@media (min-width: 500px) {
+  .hover-button {
+    width: 25%;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .hover-button {
+    width: 15%;
+    font-size: 2.4rem;
+  }
 }
 button:hover {
   color: #ffffff;
@@ -238,18 +260,6 @@ footer {
   display: inline;
   text-align: center;
   padding: 30px;
-}
-body button {
-  width: 10%;
-  height: 10vh;
-  padding: 1px 3px;
-  margin: 6vh 0;
-  align-self: center;
-  background-color: #454852;
-  color: #D7DFFF;
-  border-color: black;
-  border-radius: 15px;
-  font-size: 2.5rem;
 }
 .container {
   display: flex;
@@ -294,6 +304,11 @@ body button {
 .container .conclusion p {
   max-width: 80%;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .container .conclusion p {
+    max-width: 85%;
+  }
 }
 .about-container {
   display: flex;
